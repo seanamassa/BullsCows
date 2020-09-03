@@ -77,7 +77,7 @@ void UBullCowCartridge::ProcessGuess(const FString& Guess)
     if (Lives <=0)
     {
         ClearScreen();
-        PrintLine(TEXT("You have no lives left and proceed to get mauled by the lions!"));
+        PrintLine(TEXT("You have no lives left and proceed to get mauled by the lions!")); // add lion roar audio when no lives are left
         PrintLine(TEXT("The hidden word was: %s"), *HiddenWord);
         EndGame();
         return;
