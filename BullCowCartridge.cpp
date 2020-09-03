@@ -66,6 +66,7 @@ void UBullCowCartridge::ProcessGuess(const FString& Guess)
     {
         /* code */
         PrintLine(TEXT("No repeating letters, guess again!"));
+        --Lives;
         return;
     }
 
